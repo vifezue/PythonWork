@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module funtionLibrary</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>funtionLibrary</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cit412-victorifezue%5Cdatabaseassignment%5Cfunctions%5Cfuntionlibrary.py">c:\it412-victorifezue\databaseassignment\functions\funtionlibrary.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-NoQuotes"><strong>NoQuotes</strong></a>(strString)</dt><dd><tt>Fixes&nbsp;Quoted&nbsp;string<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;strString&nbsp;{string}&nbsp;--&nbsp;[passed&nbsp;in&nbsp;string]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;[returns&nbsp;string&nbsp;with&nbsp;formatted&nbsp;quotes]</tt></dd></dl>
+ <dl><dt><a name="-buildInsertBookSQL"><strong>buildInsertBookSQL</strong></a>(bookAuthor, ISBN, title, numCheckOut, numPurchased, price=0)</dt><dd><tt>Build&nbsp;the&nbsp;Insert&nbsp;SQL&nbsp;query&nbsp;for&nbsp;execution<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;author&nbsp;{string}&nbsp;--&nbsp;[the&nbsp;name&nbsp;of&nbsp;the&nbsp;author]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ISBN&nbsp;{string}&nbsp;--&nbsp;[ISBN]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;{string}&nbsp;--&nbsp;[Book&nbsp;Title]<br>
+&nbsp;<br>
+Keyword&nbsp;Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;numCheckOut&nbsp;{int}&nbsp;--&nbsp;[number&nbsp;of&nbsp;books&nbsp;checked&nbsp;out]&nbsp;(default:&nbsp;{0})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;price&nbsp;{int}&nbsp;--&nbsp;[the&nbsp;price&nbsp;of&nbsp;the&nbsp;book]&nbsp;(default:&nbsp;{0})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;numPurchased&nbsp;{int}&nbsp;--&nbsp;[number&nbsp;of&nbsp;books&nbsp;purchased]&nbsp;(default:&nbsp;{0})<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;[SQL&nbsp;Insert&nbsp;Statement&nbsp;for&nbsp;a&nbsp;new&nbsp;Book&nbsp;record]</tt></dd></dl>
+ <dl><dt><a name="-capTitles"><strong>capTitles</strong></a>(value)</dt><dd><tt>Capatalizes&nbsp;and&nbsp;returns&nbsp;the&nbsp;passed&nbsp;in&nbsp;string<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;{string}&nbsp;--&nbsp;passed&nbsp;in&nbsp;string<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;[string&nbsp;in&nbsp;caps]</tt></dd></dl>
+ <dl><dt><a name="-checkInvalidChars"><strong>checkInvalidChars</strong></a>(string)</dt><dd><tt>Checks&nbsp;if&nbsp;passed&nbsp;in&nbsp;string&nbsp;has&nbsp;an&nbsp;invalid&nbsp;character<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;{string}&nbsp;--&nbsp;string<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Boolean&nbsp;--&nbsp;True&nbsp;or&nbsp;false&nbsp;based&nbsp;on&nbsp;the&nbsp;condition</tt></dd></dl>
+ <dl><dt><a name="-editSQLStr"><strong>editSQLStr</strong></a>(column, newValue, bookID)</dt><dd><tt>Build&nbsp;the&nbsp;UPDATE&nbsp;SQL&nbsp;query&nbsp;for&nbsp;the&nbsp;database<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;column&nbsp;{string}&nbsp;--&nbsp;[the&nbsp;column&nbsp;needing&nbsp;an&nbsp;update]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;newValue&nbsp;{string}&nbsp;--&nbsp;[the&nbsp;new&nbsp;value]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bookID&nbsp;{string}&nbsp;--&nbsp;[the&nbsp;books&nbsp;ID]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[type]&nbsp;--&nbsp;[description]</tt></dd></dl>
+ <dl><dt><a name="-format_isbn"><strong>format_isbn</strong></a>(isbn)</dt><dd><tt>Formated&nbsp;the&nbsp;ISBN<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;isbn&nbsp;{string}&nbsp;--&nbsp;[passed&nbsp;in&nbsp;ISBN]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;[returns&nbsp;the&nbsp;ISBN&nbsp;in&nbsp;proper&nbsp;format]</tt></dd></dl>
+ <dl><dt><a name="-getAction"><strong>getAction</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;user&nbsp;input&nbsp;and&nbsp;provides&nbsp;validation</tt></dd></dl>
+ <dl><dt><a name="-getActionSelection"><strong>getActionSelection</strong></a>(val)</dt><dd><tt>Gets&nbsp;the&nbsp;type&nbsp;of&nbsp;Action&nbsp;the&nbsp;user&nbsp;wants&nbsp;to&nbsp;do<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;val&nbsp;{int}&nbsp;--&nbsp;[user&nbsp;input]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;[the&nbsp;action&nbsp;the&nbsp;user&nbsp;wants&nbsp;to&nbsp;do]</tt></dd></dl>
+ <dl><dt><a name="-getColumnSelection"><strong>getColumnSelection</strong></a>(val)</dt><dd><tt>Gets&nbsp;the&nbsp;column&nbsp;by&nbsp;user&nbsp;selection<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;val&nbsp;{int}&nbsp;--&nbsp;the&nbsp;number&nbsp;entered&nbsp;in&nbsp;by&nbsp;the&nbsp;user&nbsp;for&nbsp;selection<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;[the&nbsp;column&nbsp;name]</tt></dd></dl>
+ <dl><dt><a name="-hasLetters"><strong>hasLetters</strong></a>(inputString)</dt><dd><tt>Checks&nbsp;if&nbsp;the&nbsp;string&nbsp;has&nbsp;numbers&nbsp;and&nbsp;returns&nbsp;boolean<br>
+&nbsp;&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;inputString&nbsp;str&nbsp;--&nbsp;passed&nbsp;in&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;boolean&nbsp;--&nbsp;True&nbsp;if&nbsp;exist&nbsp;and&nbsp;False&nbsp;if&nbsp;number&nbsp;does&nbsp;not&nbsp;exist</tt></dd></dl>
+ <dl><dt><a name="-hasNumbers"><strong>hasNumbers</strong></a>(inputString)</dt><dd><tt>Checks&nbsp;if&nbsp;the&nbsp;string&nbsp;has&nbsp;numbers&nbsp;and&nbsp;returns&nbsp;boolean<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;inputString&nbsp;str&nbsp;--&nbsp;passed&nbsp;in&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;boolean&nbsp;--&nbsp;True&nbsp;if&nbsp;exist&nbsp;and&nbsp;False&nbsp;is&nbsp;str&nbsp;does&nbsp;not&nbsp;exist</tt></dd></dl>
+ <dl><dt><a name="-is_null"><strong>is_null</strong></a>(val)</dt><dd><tt>Checks&nbsp;for&nbsp;a&nbsp;Null&nbsp;Value&nbsp;and&nbsp;returns&nbsp;Boolean<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;val&nbsp;{any}&nbsp;--&nbsp;[passed&nbsp;in&nbsp;value]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[boolean]&nbsp;--&nbsp;True&nbsp;or&nbsp;False</tt></dd></dl>
+ <dl><dt><a name="-removeBookSQLStr"><strong>removeBookSQLStr</strong></a>(bookID)</dt><dd><tt>Build&nbsp;SQL&nbsp;String&nbsp;to&nbsp;remove&nbsp;the&nbsp;book&nbsp;from&nbsp;the&nbsp;database<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bookID&nbsp;{string}&nbsp;--&nbsp;Passed&nbsp;in&nbsp;Book&nbsp;unique&nbsp;identifier<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;[return&nbsp;formatted&nbsp;SQL&nbsp;String&nbsp;for&nbsp;execution&nbsp;to&nbsp;delete&nbsp;a&nbsp;record]</tt></dd></dl>
+ <dl><dt><a name="-selectAllSQLStr"><strong>selectAllSQLStr</strong></a>()</dt><dd><tt>Build&nbsp;the&nbsp;Select&nbsp;All&nbsp;SQL&nbsp;String<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;Select&nbsp;All&nbsp;SQL&nbsp;String</tt></dd></dl>
+ <dl><dt><a name="-selectBookSQLStr"><strong>selectBookSQLStr</strong></a>(bookTitle)</dt><dd><tt>Build&nbsp;the&nbsp;Select&nbsp;the&nbsp;book<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Book]&nbsp;--&nbsp;Select&nbsp;All&nbsp;SQL&nbsp;String</tt></dd></dl>
+ <dl><dt><a name="-showActionOptions"><strong>showActionOptions</strong></a>()</dt><dd><tt>Prints&nbsp;user&nbsp;statement&nbsp;for&nbsp;input</tt></dd></dl>
+ <dl><dt><a name="-showAllBooks"><strong>showAllBooks</strong></a>(data)</dt><dd><tt>Shows&nbsp;all&nbsp;book&nbsp;title&nbsp;in&nbsp;the&nbsp;database&nbsp;and&nbsp;prints&nbsp;them&nbsp;out<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data&nbsp;{collection}&nbsp;--&nbsp;passed&nbsp;in&nbsp;collection&nbsp;of&nbsp;data</tt></dd></dl>
+ <dl><dt><a name="-showColumnOptions"><strong>showColumnOptions</strong></a>()</dt><dd><tt>Prints&nbsp;user&nbsp;statement&nbsp;for&nbsp;input</tt></dd></dl>
+ <dl><dt><a name="-validate_str"><strong>validate_str</strong></a>(self, passedStr)</dt><dd><tt>Validates&nbsp;the&nbsp;string&nbsp;and&nbsp;make&nbsp;sure&nbsp;its&nbsp;only&nbsp;a&nbsp;string&nbsp;and&nbsp;returns&nbsp;boolean<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passedStr&nbsp;{string}&nbsp;--&nbsp;user&nbsp;entry&nbsp;entered&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;boolean&nbsp;--&nbsp;True&nbsp;or&nbsp;False</tt></dd></dl>
+</td></tr></table>
+</body></html>

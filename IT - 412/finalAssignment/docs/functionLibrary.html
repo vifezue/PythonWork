@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module functionLibrary</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>functionLibrary</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cit412-victorifezue%5Cfinalassignment%5Cfunctions%5Cfunctionlibrary.py">c:\it412-victorifezue\finalassignment\functions\functionlibrary.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="csv.html">csv</a><br>
+<a href="datetime.html">datetime</a><br>
+<a href="tkinter.filedialog.html">tkinter.filedialog</a><br>
+</td><td width="25%" valign=top><a href="io.html">io</a><br>
+<a href="json.html">json</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="ntpath.html">ntpath</a><br>
+<a href="pymysql.html">pymysql</a><br>
+<a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="shutil.html">shutil</a><br>
+<a href="time.html">time</a><br>
+<a href="tkinter.html">tkinter</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-NoQuotes"><strong>NoQuotes</strong></a>(strString)</dt><dd><tt>Fixes&nbsp;Quoted&nbsp;string<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;strString&nbsp;{string}&nbsp;--&nbsp;[passed&nbsp;in&nbsp;string]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;[returns&nbsp;string&nbsp;with&nbsp;formatted&nbsp;quotes]</tt></dd></dl>
+ <dl><dt><a name="-addItemToAllDatabases"><strong>addItemToAllDatabases</strong></a>(item)</dt><dd><tt>Adds&nbsp;the&nbsp;Json&nbsp;Item&nbsp;to&nbsp;the&nbsp;database</tt></dd></dl>
+ <dl><dt><a name="-addItemToCRMDatabase"><strong>addItemToCRMDatabase</strong></a>(item)</dt><dd><tt>Service&nbsp;Controller&nbsp;to&nbsp;add&nbsp;data&nbsp;to&nbsp;the&nbsp;database&nbsp;by&nbsp;either&nbsp;a&nbsp;manual&nbsp;process&nbsp;or&nbsp;import&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;item&nbsp;--&nbsp;json</tt></dd></dl>
+ <dl><dt><a name="-addItemToMailingDatabase"><strong>addItemToMailingDatabase</strong></a>(item, insertFlag=0)</dt><dd><tt>Adds&nbsp;the&nbsp;Json&nbsp;Item&nbsp;to&nbsp;the&nbsp;database&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;item&nbsp;--&nbsp;json</tt></dd></dl>
+ <dl><dt><a name="-addToCRMDatabase"><strong>addToCRMDatabase</strong></a>(item)</dt><dd><tt>Adds&nbsp;the&nbsp;Json&nbsp;Item&nbsp;to&nbsp;the&nbsp;CRM_Database&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;item&nbsp;--&nbsp;json</tt></dd></dl>
+ <dl><dt><a name="-backUpFile"><strong>backUpFile</strong></a>(filepath)</dt><dd><tt>Backs&nbsp;up&nbsp;selected&nbsp;file&nbsp;with&nbsp;datetime&nbsp;stamp&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filepath&nbsp;{fileObject}&nbsp;--&nbsp;the&nbsp;file&nbsp;selected</tt></dd></dl>
+ <dl><dt><a name="-convert_csv"><strong>convert_csv</strong></a>(data)</dt><dd><tt>Converts&nbsp;the&nbsp;passed&nbsp;in&nbsp;file&nbsp;to&nbsp;a&nbsp;CSV&nbsp;File&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data&nbsp;{txtFile}&nbsp;--&nbsp;[passed&nbsp;in&nbsp;text&nbsp;file]</tt></dd></dl>
+ <dl><dt><a name="-convert_json"><strong>convert_json</strong></a>(data)</dt><dd><tt>Converts&nbsp;the&nbsp;data&nbsp;into&nbsp;a&nbsp;Json</tt></dd></dl>
+ <dl><dt><a name="-enterMailingInfo"><strong>enterMailingInfo</strong></a>()</dt><dd><tt>Data&nbsp;Collection&nbsp;for&nbsp;the&nbsp;Mailing&nbsp;Information&nbsp;Database<br>
+&nbsp;&nbsp;&nbsp;Collects&nbsp;the&nbsp;data&nbsp;for&nbsp;entry<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nothing</tt></dd></dl>
+ <dl><dt><a name="-getAction"><strong>getAction</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;user&nbsp;input&nbsp;and&nbsp;provides&nbsp;validation</tt></dd></dl>
+ <dl><dt><a name="-getActionSelection"><strong>getActionSelection</strong></a>(val)</dt><dd><tt>Gets&nbsp;the&nbsp;type&nbsp;of&nbsp;Action&nbsp;the&nbsp;user&nbsp;wants&nbsp;to&nbsp;do<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;val&nbsp;{int}&nbsp;--&nbsp;[user&nbsp;input]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;[the&nbsp;action&nbsp;the&nbsp;user&nbsp;wants&nbsp;to&nbsp;do]</tt></dd></dl>
+ <dl><dt><a name="-getAddress"><strong>getAddress</strong></a>()</dt><dd><tt>Get&nbsp;the&nbsp;address&nbsp;information<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;--&nbsp;address&nbsp;information</tt></dd></dl>
+ <dl><dt><a name="-getCity"><strong>getCity</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;City&nbsp;for&nbsp;customer&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;--&nbsp;City</tt></dd></dl>
+ <dl><dt><a name="-getCompanyName"><strong>getCompanyName</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;company&nbsp;information<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;--&nbsp;company&nbsp;information</tt></dd></dl>
+ <dl><dt><a name="-getCustomerData"><strong>getCustomerData</strong></a>()</dt><dd><tt>Gathers&nbsp;the&nbsp;Data&nbsp;to&nbsp;enter&nbsp;and&nbsp;new&nbsp;Customer&nbsp;Record<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dict&nbsp;--&nbsp;customerDetails</tt></dd></dl>
+ <dl><dt><a name="-getDataFile"><strong>getDataFile</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;data&nbsp;file&nbsp;from&nbsp;user&nbsp;input<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;file&nbsp;--&nbsp;returns&nbsp;a&nbsp;selected&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-getDatabaseName"><strong>getDatabaseName</strong></a>(val)</dt><dd><tt>Gets&nbsp;the&nbsp;type&nbsp;of&nbsp;Action&nbsp;the&nbsp;user&nbsp;wants&nbsp;to&nbsp;do&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;val&nbsp;{int}&nbsp;--&nbsp;[user&nbsp;input]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;[the&nbsp;action&nbsp;the&nbsp;user&nbsp;wants&nbsp;to&nbsp;do]</tt></dd></dl>
+ <dl><dt><a name="-getEmailAddress"><strong>getEmailAddress</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;email&nbsp;address&nbsp;from&nbsp;user&nbsp;entry<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;--&nbsp;email&nbsp;address</tt></dd></dl>
+ <dl><dt><a name="-getFirstName"><strong>getFirstName</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;first&nbsp;name<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;--&nbsp;firstName</tt></dd></dl>
+ <dl><dt><a name="-getLastName"><strong>getLastName</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;last&nbsp;name<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;--&nbsp;lastName</tt></dd></dl>
+ <dl><dt><a name="-getPhone"><strong>getPhone</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;Phone&nbsp;Numer<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;--&nbsp;phoneNumber&nbsp;or&nbsp;secondaryPhone</tt></dd></dl>
+ <dl><dt><a name="-getState"><strong>getState</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;state&nbsp;by&nbsp;user&nbsp;entry<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;--&nbsp;state</tt></dd></dl>
+ <dl><dt><a name="-getZipCode"><strong>getZipCode</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;ZipCode&nbsp;by&nbsp;user&nbsp;entry<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;--&nbsp;zip</tt></dd></dl>
+ <dl><dt><a name="-hasLetters"><strong>hasLetters</strong></a>(inputString)</dt><dd><tt>Checks&nbsp;if&nbsp;the&nbsp;string&nbsp;has&nbsp;numbers&nbsp;and&nbsp;returns&nbsp;boolean<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;inputString&nbsp;str&nbsp;--&nbsp;passed&nbsp;in&nbsp;string<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;boolean&nbsp;--&nbsp;True&nbsp;if&nbsp;exist&nbsp;and&nbsp;False&nbsp;if&nbsp;number&nbsp;does&nbsp;not&nbsp;exist</tt></dd></dl>
+ <dl><dt><a name="-hasNumbers"><strong>hasNumbers</strong></a>(inputString)</dt><dd><tt>Checks&nbsp;if&nbsp;the&nbsp;string&nbsp;has&nbsp;numbers&nbsp;and&nbsp;returns&nbsp;boolean<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;inputString&nbsp;str&nbsp;--&nbsp;passed&nbsp;in&nbsp;string<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;boolean&nbsp;--&nbsp;True&nbsp;if&nbsp;exist&nbsp;and&nbsp;False&nbsp;is&nbsp;str&nbsp;does&nbsp;not&nbsp;exist</tt></dd></dl>
+ <dl><dt><a name="-is_null"><strong>is_null</strong></a>(val)</dt><dd><tt>Checks&nbsp;for&nbsp;a&nbsp;Null&nbsp;Value&nbsp;and&nbsp;returns&nbsp;Boolean<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;val&nbsp;{any}&nbsp;--&nbsp;[passed&nbsp;in&nbsp;value]<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[boolean]&nbsp;--&nbsp;True&nbsp;or&nbsp;False</tt></dd></dl>
+ <dl><dt><a name="-phone_format"><strong>phone_format</strong></a>(number)</dt><dd><tt>Formats&nbsp;the&nbsp;phone&nbsp;number&nbsp;entered<br>
+&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;{string}&nbsp;--&nbsp;unformatted&nbsp;phone&nbsp;number<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[string]&nbsp;--&nbsp;formatted&nbsp;phone&nbsp;number</tt></dd></dl>
+ <dl><dt><a name="-selectCRMSQLStr"><strong>selectCRMSQLStr</strong></a>(firstName, lastName)</dt><dd><tt>Build&nbsp;the&nbsp;Select&nbsp;the&nbsp;Customer&nbsp;Query<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Name]&nbsp;--&nbsp;Select&nbsp;All&nbsp;SQL&nbsp;String</tt></dd></dl>
+ <dl><dt><a name="-selectMailingSQLStr"><strong>selectMailingSQLStr</strong></a>(firstName, lastName)</dt><dd><tt>Build&nbsp;the&nbsp;Select&nbsp;the&nbsp;Customer&nbsp;Query<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Name]&nbsp;--&nbsp;Select&nbsp;All&nbsp;SQL&nbsp;String</tt></dd></dl>
+ <dl><dt><a name="-servController"><strong>servController</strong></a>(jsonFile)</dt><dd><tt>DATA&nbsp;IMPORT&nbsp;SERVICE&nbsp;CONTROLLER</tt></dd></dl>
+ <dl><dt><a name="-showActionOptions"><strong>showActionOptions</strong></a>()</dt><dd><tt>Prints&nbsp;user&nbsp;statement&nbsp;for&nbsp;input</tt></dd></dl>
+ <dl><dt><a name="-showDatabaseOptions"><strong>showDatabaseOptions</strong></a>()</dt><dd><tt>Shows&nbsp;the&nbsp;database&nbsp;options&nbsp;for&nbsp;selection</tt></dd></dl>
+ <dl><dt><a name="-showRecords"><strong>showRecords</strong></a>(database)</dt><dd><tt>Shows&nbsp;the&nbsp;database&nbsp;records</tt></dd></dl>
+ <dl><dt><a name="-updateCRMRecord"><strong>updateCRMRecord</strong></a>()</dt><dd><tt>Collects&nbsp;user&nbsp;entry&nbsp;and&nbsp;selects&nbsp;the&nbsp;GUID&nbsp;from&nbsp;the&nbsp;crm_data&nbsp;database&nbsp;by<br>
+&nbsp;&nbsp;&nbsp;selecting&nbsp;the&nbsp;first&nbsp;and&nbsp;last&nbsp;name&nbsp;and&nbsp;returning&nbsp;the&nbsp;ID<br>
+&nbsp;&nbsp;&nbsp;Allows&nbsp;the&nbsp;user&nbsp;to&nbsp;update&nbsp;the&nbsp;record&nbsp;by&nbsp;the&nbsp;ID<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nothing</tt></dd></dl>
+ <dl><dt><a name="-updateMailingsRecord"><strong>updateMailingsRecord</strong></a>()</dt><dd><tt>Collects&nbsp;user&nbsp;entry&nbsp;and&nbsp;selects&nbsp;the&nbsp;GUID&nbsp;from&nbsp;the&nbsp;mailing&nbsp;database&nbsp;by<br>
+&nbsp;&nbsp;&nbsp;selecting&nbsp;the&nbsp;first&nbsp;and&nbsp;last&nbsp;name&nbsp;and&nbsp;returning&nbsp;the&nbsp;ID<br>
+&nbsp;&nbsp;&nbsp;Allows&nbsp;the&nbsp;user&nbsp;to&nbsp;update&nbsp;the&nbsp;record&nbsp;by&nbsp;the&nbsp;ID<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nothing</tt></dd></dl>
+ <dl><dt><a name="-validate_string"><strong>validate_string</strong></a>(val)</dt><dd><tt>Validates&nbsp;string</tt></dd></dl>
+</td></tr></table>
+</body></html>
