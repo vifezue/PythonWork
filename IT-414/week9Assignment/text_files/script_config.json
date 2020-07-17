@@ -1,0 +1,13 @@
+{
+  "mail_server": "mail.starfishtechandlearning.com",
+  "mail_port": 26,
+  "username": "alerts@starfishtechandlearning.com",
+  "password": "IT414*58sp2020",
+  "from_email": "alerts@starfishtechandlearning.com",
+  "to_email": "alerts@starfishtechandlearning.com",
+  "twilio_account_id": "AC282a5d7aaab5ff9db1e698c29295569c",
+  "twilio_auto_token": "c0e6353c21e5caa26cc51b3143f28259",
+  "twilio_trial_number": "+12084178995",
+  "twilio_cell_number": "+15865633934",
+  "last_text": ""
+}
